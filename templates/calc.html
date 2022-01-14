@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<script>
+    function add(){
+        var  num1= Number(document.getElementById('inp1').value)
+        var num2= Number(document.getElementById('inp2').value)
+        var ans= num1+num2;
+        document.getElementById('ansi').value=ans;
+    }
+    function sub() {
+        var num1 = Number(document.getElementById('inp1').value)
+        var num2 = Number(document.getElementById('inp2').value)
+        var ans = num1 - num2;
+        document.getElementById('ansi').value = ans;
+    }
+    function div() {
+        var num1 = Number(document.getElementById('inp1').value)
+        var num2 = Number(document.getElementById('inp2').value)
+        var ans = num1 / num2;
+        document.getElementById('ansi').value = ans;
+    }
+    function mult() {
+        var num1 = Number(document.getElementById('inp1').value)
+        var num2 = Number(document.getElementById('inp2').value)
+        var ans = num1 * num2;
+        document.getElementById('ansi').value = ans;
+    }
+    function rem() {
+        var num1 = Number(document.getElementById('inp1').value)
+        var num2 = Number(document.getElementById('inp2').value)
+        var ans = num1 % num2;
+        document.getElementById('ansi').value = ans;
+    }
+    function sqrt() {
+        var num1 = Number(document.getElementById('inp1').value)
+        var num2 = Number(document.getElementById('inp2').value)
+        var ans = num1 ** num2;
+        document.getElementById('ansi').value = ans;
+    }
+    function int(val){
+        document.getElementById('inp2').value=+val;
+    }
+</script>
+<body>
+<form autocomplete="off">
+    <h1>CALCULATOR</h1><hr>
+    <input type="text" value="=0">
+    <input type="text" value="0">
+    <br><hr>
+    <button type="reset">C</button>
+    <button type="button" onclick="sqrt()">^</button>
+    <button type="button" onclick="rem()">%</button>
+    <button type="button" >.</button><br>
+    <button type="button" onclick="int(7)">7</button>
+    <button type="button" onclick="int(8)">8</button>
+    <button type="button" onclick="int(9)">9</button>
+    <button type="button" onclick="div()">/</button><br>
+    <button type="button" onclick="int(4)">4</button>
+    <button type="button" onclick="int(5)">5</button>
+    <button type="button" onclick="int(6)">6</button>
+    <button type="button" onclick="mult()">*</button><br>
+    <button type="button" onclick="int(1)">1</button>
+    <button type="button" onclick="int(2)">2</button>
+    <button type="button" onclick="int(3)">3</button>
+    <button type="button" onclick="sub()">-</button><br>
+    <button type="button" onclick="int(0)">0</button>
+    <button type="button" onclick="int()">(</button>
+    <button type="button" onclick="int()">)</button>
+    <button type="button" onclick="add()">+</button><br>
+    <input type="text" name="text" value="0">
+
+
+
+</form>
+
+</body>
+</html>
